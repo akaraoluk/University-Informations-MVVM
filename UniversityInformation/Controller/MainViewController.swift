@@ -7,13 +7,24 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UITableViewController {
     //Mark: - Properties
+    var viewModel: MainViewModel = MainViewModel()
     //Mark: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        setup()
     }
 }
 
 //Mark: - Helpers
+
+extension MainViewController {
+    private func configureView() {
+        view.backgroundColor = .red
+    }
+    func setup() {
+        configureView()
+        registerTableView()
+    }
+}
