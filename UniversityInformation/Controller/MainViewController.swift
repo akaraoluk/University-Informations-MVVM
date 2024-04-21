@@ -10,6 +10,9 @@ import UIKit
 class MainViewController: UITableViewController {
     //Mark: - Properties
     var viewModel: MainViewModel = MainViewModel()
+    var dataResult: [University] = [] {
+        didSet { tableView.reloadData()}
+    }
     //Mark: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +29,12 @@ extension MainViewController {
     func setup() {
         configureView()
         registerTableView()
+        getData()
+    }
+    
+    func getData() {
+        viewModel.getData { result in
+            self.dataResult = result
+        }
     }
 }
