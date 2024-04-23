@@ -17,7 +17,7 @@ class Service {
     static func getData(completion: @escaping(Result<[University], ServiceError>) -> Void) {
         AF.request(ServiceConstants.shared.url).response { response in
             
-            if let error = response.error {
+            if response.error != nil {
                 completion(.failure(.urlError))
                 return
             }
