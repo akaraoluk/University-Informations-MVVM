@@ -31,5 +31,10 @@ class MainViewModel {
         return self.dataResult.count
     }
     
+    func createMainCellViewModel(model: University) -> MainViewCellModel{
+        let cellModel = MainViewCellModel(model: model)
+        return cellModel
+    }
+    
 }
 

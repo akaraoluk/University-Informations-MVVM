@@ -24,10 +24,17 @@ class MainViewController: UITableViewController {
 
 extension MainViewController {
     private func configureView() {
-        view.backgroundColor = .red
+        view.backgroundColor = .white
     }
+    
+    private func configureNavigation() {
+        self.navigationItem.title = "University"
+        navigationController?.navigationBar.prefersLargeTitles = true
+    }
+    
     func setup() {
         configureView()
+        configureNavigation()
         registerTableView()
         getData()
     }

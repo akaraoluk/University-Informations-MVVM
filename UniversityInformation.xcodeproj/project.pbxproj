@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		150640922BD9A26000036E36 /* MainViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150640912BD9A26000036E36 /* MainViewCell.swift */; };
+		150640942BDAF80700036E36 /* MainViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150640932BDAF80700036E36 /* MainViewCellModel.swift */; };
 		15D814FD2BD5501000763540 /* ServiceConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D814FC2BD5501000763540 /* ServiceConstants.swift */; };
 		15D814FF2BD550CD00763540 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D814FE2BD550CD00763540 /* Service.swift */; };
 		15D815022BD5512800763540 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 15D815012BD5512800763540 /* Alamofire */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		150640912BD9A26000036E36 /* MainViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCell.swift; sourceTree = "<group>"; };
+		150640932BDAF80700036E36 /* MainViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewCellModel.swift; sourceTree = "<group>"; };
 		15D814FC2BD5501000763540 /* ServiceConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstants.swift; sourceTree = "<group>"; };
 		15D814FE2BD550CD00763540 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		15D815042BD552B600763540 /* University.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 		15F6DC072BD3B60C005CADDB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				150640932BDAF80700036E36 /* MainViewCellModel.swift */,
 				15F6DC082BD3B629005CADDB /* MainViewModel.swift */,
 			);
 			path = ViewModel;
@@ -213,6 +216,7 @@
 				15D814FF2BD550CD00763540 /* Service.swift in Sources */,
 				15E2F3CA2BD28E390077BFD7 /* MainViewController.swift in Sources */,
 				15E2F3B42BD28D7C0077BFD7 /* AppDelegate.swift in Sources */,
+				150640942BDAF80700036E36 /* MainViewCellModel.swift in Sources */,
 				15D814FD2BD5501000763540 /* ServiceConstants.swift in Sources */,
 				15D815052BD552B600763540 /* University.swift in Sources */,
 				15E2F3B62BD28D7C0077BFD7 /* SceneDelegate.swift in Sources */,
